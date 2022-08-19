@@ -80,7 +80,9 @@ export default {
           sessionStorage.setItem('usuario', JSON.stringify(this.usuario));
           if(this.usuario.rol == 'admin'){
             this.$router.push('/admin');
-
+          }
+          if(this.usuario.rol == 'lider'){
+            this.$router.push('/lider/' + this.usuario.id);
           }
         }
         else{

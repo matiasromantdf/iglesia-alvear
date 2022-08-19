@@ -7,7 +7,11 @@ import { RouterLink, RouterView } from 'vue-router'
 <router-view></router-view>
 </template>
 
-<style scoped>
+<style>
+label{
+    display: block;
+    font-weight: bolder;
+}
 </style>
 <script>
 </script>

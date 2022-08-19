@@ -48,7 +48,7 @@
                     <label for="lider">Lider</label>
                     <select class="form-control" id="lider" v-model="lider">
                         <option>Sin Asignar</option>
-                        <option v-for="lider in lideres" :value="lider.id">{{lider.nombre}}</option>
+                        <option v-for="lider in lideres" :value="lider.id" :key="lider.id">{{lider.nombre}}</option>
                     </select>
                 </div>
                 <button type="submit" class="btn btn-primary" id="enviar">Agregar</button>
